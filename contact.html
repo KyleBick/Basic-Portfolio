@@ -5,42 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/contact.css">
 </head>
+
 <body>
     
-        <div id="header">
+        <nav id="nav">
+        
                 <header>
                     <h1 id="Kyle">Kyle Bick</h1>
                 </header>
-            </div>
-            
-            <nav id="nav">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-
-         <section id="Contact">
+     
                 
-                <header id=head>
-                    <h2>Contact</h2>
-                </header>
-                    
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Message</th>
-                            </tr>
-                        </thead>
-                    </table>
+        
+                    <a class="active" href="#About">About</a>
+                    <a href="#Portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+        </nav>
+    
 
-                <input id="Submit" type="Submit" name="Submit" value="Submit">
+         <section id="section">
                 
+                
+                <h2 id="Contact">Contact</h2>
+<!--Could not figure out how to add the line-->
+
+                <br>
+
+                <div class="container">
+                    <form action="action_page.php">
+                        
+                      <label id="name1" for="name">Name</label>
+                      <input type="text" id="name" name="name" placeholder="Your name..">
+
+                <br>
+
+                      <label id="email1" for="email">Email</label>
+                      <input type="text" id="email" name="Email" placeholder="Email..">
+                
+                <br>
+
+                      <label id="Message" for="message">Message</label>
+                      <textarea id="message" name="message" placeholder="Write something.." 
+                      style="height:200px"></textarea>
+                
+                <br>
+                
+                      <input id="button" type="submit" value="Submit">
+                  
+                    </form>
+                </div>
+                   
             </section>   
+<!--Could not figure out how to add the blue line-->
 
             <footer id="footer">
                     <p>Copyrite&copy;</p>
